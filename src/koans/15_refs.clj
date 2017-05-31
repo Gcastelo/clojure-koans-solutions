@@ -37,4 +37,4 @@
           (ref-set the-world {})
           (alter the-world assoc :jerry "Real Jerry")
           (alter bizarro-world assoc :jerry "Bizarro Jerry")
-          [(get (deref the-world) :jerry) (get (deref bizarro-world) :jerry)]))))
+          [(get @the-world :jerry) (get @bizarro-world :jerry)]))))
